@@ -1,0 +1,40 @@
+﻿@model IEnumerable<EYGamingClub.Models.Players>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h4>Player Register</h4>
+<hr />
+
+<meta http-equiv="refresh" content="5" />
+<div>
+    @{var totalplayers = (int)ViewBag.PlayersCount;}
+    Total number of players:  @totalplayers
+</div>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PlayerName)
+            </th>
+            @*<th>
+                <a asp-action="AddOrEdit" class="btn btn-outline-success"><i class="far fa-plus-square"></i> Agregar player</a>
+            </th>*@
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PlayerName)
+                </td>
+                <td>
+                    @*<a asp-action="AddOrEdit" asp-route-id="@item.PlayerId"><i class="fa fa-marker fa-lg"></i></a>*@
+                    @*<a asp-action="Delete" asp-route-id="@item.PlayerId" class="text-danger ml-1" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt fa-lg"></i></a>*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

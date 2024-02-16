@@ -1,0 +1,25 @@
+thanks for using faviconit!
+copy the files to your site and add this code inside the HTML <HEAD> tag:
+
+	<!-- ****** faviconit.com favicons ****** -->
+	<link rel="shortcut icon" href="/eyfavicon.ico?v=1.0">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="/eyfavicon.ico?v=1.0">
+	<link rel="icon" type="image/png" sizes="196x196" href="/eyfavicon-192.png?v=1.0">
+	<link rel="icon" type="image/png" sizes="160x160" href="/eyfavicon-160.png?v=1.0">
+	<link rel="icon" type="image/png" sizes="96x96" href="/eyfavicon-96.png?v=1.0">
+	<link rel="icon" type="image/png" sizes="64x64" href="/eyfavicon-64.png?v=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="/eyfavicon-32.png?v=1.0">
+	<link rel="icon" type="image/png" sizes="16x16" href="/eyfavicon-16.png?v=1.0">
+	<link rel="apple-touch-icon" href="/eyfavicon-57.png?v=1.0">
+	<link rel="apple-touch-icon" sizes="114x114" href="/eyfavicon-114.png?v=1.0">
+	<link rel="apple-touch-icon" sizes="72x72" href="/eyfavicon-72.png?v=1.0">
+	<link rel="apple-touch-icon" sizes="144x144" href="/eyfavicon-144.png?v=1.0">
+	<link rel="apple-touch-icon" sizes="60x60" href="/eyfavicon-60.png?v=1.0">
+	<link rel="apple-touch-icon" sizes="120x120" href="/eyfavicon-120.png?v=1.0">
+	<link rel="apple-touch-icon" sizes="76x76" href="/eyfavicon-76.png?v=1.0">
+	<link rel="apple-touch-icon" sizes="152x152" href="/eyfavicon-152.png?v=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="/eyfavicon-180.png?v=1.0">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="/eyfavicon-144.png?v=1.0">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<!-- ****** faviconit.com favicons ****** -->

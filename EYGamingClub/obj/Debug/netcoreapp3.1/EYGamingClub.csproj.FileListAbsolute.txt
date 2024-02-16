@@ -1,0 +1,284 @@
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\appsettings.json
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.exe
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.deps.json
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.runtimeconfig.json
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.runtimeconfig.dev.json
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.pdb
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.Views.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.Views.pdb
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.AssemblyInfoInputs.cache
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.AssemblyInfo.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.csproj.CoreCompileInputs.cache
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.MvcApplicationPartsAssemblyInfo.cache
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.RazorAssemblyInfo.cache
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.RazorAssemblyInfo.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.TagHelpers.input.cache
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.TagHelpers.output.cache
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.RazorCoreGenerate.cache
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Card\AddOrEdit.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Card\Index.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Player\AddOrEdit.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Player\Index.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Question\AddOrEdit.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Question\Contributor.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Question\Index.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\TTTBingo\Index.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Winner\Index.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.RazorTargetAssemblyInfo.cache
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.RazorTargetAssemblyInfo.cs
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.Views.pdb
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.csproj.CopyComplete
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\staticwebassets\EYGamingClub.StaticWebAssets.Manifest.cache
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\staticwebassets\EYGamingClub.StaticWebAssets.xml
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.dll
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.pdb
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.genruntimeconfig.cache
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.csproj.AssemblyReference.cache
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.GeneratedMSBuildEditorConfig.editorconfig
+E:\ASPNET CORE Practice\EYGamingClub\EYGamingClub\obj\Debug\netcoreapp3.1\scopedcss\bundle\EYGamingClub.styles.css
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\appsettings.json
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.StaticWebAssets.xml
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.exe
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.deps.json
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.runtimeconfig.json
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.runtimeconfig.dev.json
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.pdb
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.Views.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\EYGamingClub.Views.pdb
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\New folder\EYGAME\EYGamingClub\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.csproj.AssemblyReference.cache
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.GeneratedMSBuildEditorConfig.editorconfig
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.AssemblyInfoInputs.cache
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.AssemblyInfo.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.csproj.CoreCompileInputs.cache
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.MvcApplicationPartsAssemblyInfo.cache
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.RazorAssemblyInfo.cache
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.RazorAssemblyInfo.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\staticwebassets\EYGamingClub.StaticWebAssets.Manifest.cache
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\staticwebassets\EYGamingClub.StaticWebAssets.Pack.cache
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.EYGamingClub.Microsoft.AspNetCore.StaticWebAssets.props
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.EYGamingClub.props
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.EYGamingClub.props
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.EYGamingClub.props
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.TagHelpers.input.cache
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.TagHelpers.output.cache
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.RazorCoreGenerate.cache
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Card\AddOrEdit.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Card\Index.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Player\AddOrEdit.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Player\Index.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Question\AddOrEdit.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Question\Contributor.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Question\Index.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\TTTBingo\Index.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\Winner\Index.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.RazorTargetAssemblyInfo.cache
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.RazorTargetAssemblyInfo.cs
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.Views.pdb
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.csproj.CopyComplete
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.dll
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.pdb
+C:\New folder\EYGAME\EYGamingClub\obj\Debug\netcoreapp3.1\EYGamingClub.genruntimeconfig.cache

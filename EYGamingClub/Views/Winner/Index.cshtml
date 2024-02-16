@@ -1,0 +1,204 @@
+﻿@model IEnumerable<EYGamingClub.Models.Winners>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h4>Winners Register</h4>
+<hr />
+
+<input id="txtSearchWinner" type="text" placeholder="Search Winner by Email, PrizeType, Gpncode, FullName or PlayerNick"> <a id="btnSearchWinner" class="btn btn-outline-info"><i class="fas fa-search"></i></a><button id="btnWinnerFilterBack" onClick="BackFromWinner();">Back to list.</button>
+<table id="tblWinners" class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                Winner Id 
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Prize Type
+            </th>
+            <th>
+                Score
+            </th>
+            <th>
+                Player ID
+            </th>
+            <th>
+                GPN
+            </th>
+            <th>
+                Full Name 
+            </th>
+            <th>
+                Player Nick
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WinnerId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PrizeType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Score)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PlayerId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gpncode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PlayerNick)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<table id="tblWinnerByToken" class="table table-hover" style="display:none">
+    <thead>
+        <tr>
+            <th>
+                Winner Id
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Prize Type
+            </th>
+            <th>
+                Score
+            </th>
+            <th>
+                Player ID
+            </th>
+            <th>
+                GPN
+            </th>
+            <th>
+                Full Name
+            </th>
+            <th>
+                Player Nick
+            </th>
+        </tr>
+    </thead>
+    <tbody id="tbdWinnerByFilter">
+    </tbody>
+</table>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $('#btnSearchWinner').click(function () {
+
+        searchwinnerbytoken();
+    });
+
+
+    function BackFromWinner() {
+        var credentials = "";
+        $.ajax({
+                 type: "POST",
+                 ContentType: 'application/json',
+                 url: '@Url.Action("Index","Winner")',
+                 data:JSON.stringify(credentials),
+                 success: function () {
+                      window.location.assign("/Winner/");
+                 },
+                 error: function (XMLHttpRequest, textStatus, errorThrown) {
+                       alert(XMLHttpRequest.responseText);
+                 }
+             });
+    }
+
+
+
+
+    function searchwinnerbytoken() {
+
+        var currentquestionId = $('#txtSearchWinner').val();
+
+        $.ajax({
+            url: "/Winner/SearchWinnerByToken",
+            xhrFields: { withCredentials: true },
+            crossDomain: true,
+            data: {
+                winnertoken: currentquestionId
+            },
+            type: "GET",
+            dataType: "json",
+            success: function (result, status, xhr) {
+
+                var resultFromServer = xhr.getResponseHeader("JSonSearchWinnerResult");
+
+                //alert('MY SEARCHED WINNER' + resultFromServer);
+
+                if (resultFromServer != "NoResults") {
+
+                    $('#tblWinners').hide();
+                    $('#tblWinnerByToken').show();
+
+                    var arrpotentialwinners = resultFromServer.split(";");         
+ 
+                    var newtr_html = '';
+
+                    //for (var i = 0; i < arrpotentialwinners.length - 1; i++) {
+
+
+
+                    newtr_html += "<tr>\
+                                       <td>" + arrpotentialwinners[0] + "</td >\
+                                       <td>" + arrpotentialwinners[1] + "</td>\
+                                       <td>" + arrpotentialwinners[2] + "</td>\
+                                       <td>" + arrpotentialwinners[3] + "</td >\
+                                       <td>" + arrpotentialwinners[4] + "</td>\
+                                       <td>" + arrpotentialwinners[5] + "</td>\
+                                       <td>" + arrpotentialwinners[6] + "</td>\
+                                       <td>" + arrpotentialwinners[7] + "</td>\
+                                   </tr> ";
+
+                    $('#tbdWinnerByFilter').html(newtr_html);
+
+                    //}
+
+
+                }
+                else {
+                    $('#tblWinners').hide();
+                    $('#tblWinnerByToken').show();
+
+                    newtr_html += "<tr><td></td>\
+                                       <td>" + "No results." + "</td>\
+                                       <td></td></tr>\
+                                   <tr><td></td><td></td><td></td></tr>";
+
+
+                    $('#tbdWinnerByFilter').html(newtr_html);
+                }
+
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert('Unexpected error: ' + textStatus + " .Details: " + errorThrown);
+            }
+        });
+
+    }
+
+</script>
+

@@ -1,0 +1,704 @@
+﻿@model EYGamingClub.Models.Questions
+@{
+    Layout = "";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/bingo.css" />
+    <link rel="stylesheet" href="~/css/TTTBingo.css" />    
+</head>
+<body>
+
+    @*BEGIN PLAYER PANEL---------------------------------------------------*@
+    <table id="tbPlayerNickname" class="alignright_Default" cellpadding="0" cellspacing="0" width="1500px" style="display: none; ">
+        <tr>
+            <th><button id="btnExitPlayer" class="button_Default button4"><--Exit</button></th>
+            <th id="mnQAsked"><a href="#">Questions asked</a></th>
+            <th><span id="spBtnBingoTimer" class="spanBtnTimer_Default" style="display: none;"></span>&nbsp;<button id="btnGotBingo" class="btnGotBingo_Default button4" style="display: none;">Bingo!!</button></th>
+            <th><span id="spBtnLineTimer" class="spanBtnTimer_Default" style="display: none;"></span>&nbsp;<button id="btnGotLine" class="btnGotBingo_Default button4" style="display: none;">Line!!</button></th>
+            <th>Player &nbsp;<span id="spNickname" class="spanNickname" style="display: none;">  </span>&nbsp;</th>
+        </tr>
+    </table>
+    <table id="tbAdmin" class="alignadmin" cellpadding="0" cellspacing="0" width="1500px" style="display: none;">
+        <tr>
+            <th id="lblGameStatus" style="display:none;">Game is &nbsp;<span id="spGameStatus" class="spanGameStatusOFF" style="display:none;cursor:pointer">  </span>&nbsp;</th>
+            <th id="lblGameMode">Game mode&nbsp;<span id="spGameMode" class="spanGameStatusOFF">Not Set</span>&nbsp;</th>
+            <th id="mnPlayers" style="display:none;">
+                <a href="#">Players</a>
+            </th>
+            <th id="mnCards" style="display:none;">
+                <a href="#">Cards</a>
+            </th>
+            <th id="mnQuestions" style="display:none;">
+                <a href="#">Questions</a>
+            </th>
+            <th id="mnWinners">
+                <a href="#">Winners</a>
+            </th>
+            <th id="lblAdminName" style="display:none;">&nbsp;<span id="spAdminName" class="spanAdminName" style="display:none;">  </span>&nbsp;</th>
+            <th id="lblAdmin" style="display:none;">&nbsp;<span id="spAdmin" class="spanNickname" style="display:none;">  </span>&nbsp;</th>
+        </tr>
+    </table>
+    <div class="header">
+        <img id="imgBingoHeader" class="imgBingoHeader_Default" style="display:none;" />
+    </div>
+
+    <div id="modal-background">
+
+    </div>
+    <input id="hdnQEdition" type="hidden" />
+    <input id="hdnGameSessionIDplayer" type="hidden" />
+    <input id="hdnArrGameKey" type="hidden" />
+    <input id="hdnGameSessionID" type="hidden" />
+    <input id="hdnCancelOperations" type="hidden" />
+    <input id="hdnRemoteFunctionNParam" type="hidden" />
+    <input id="hdnQuestionToUpdate" type="hidden" />
+    <input id="hdnPlayerToDelete" type="hidden" />
+    <input id="hdnNewPlayerId" type="hidden" />
+    <input id="hdnCheckCardPlayerId" type="hidden" />
+    <input id="hdnWinnerCurrentCardPrizeType" type="hidden" />
+    <input id="hdnCurrentAnalyzedPlayerCardTD" type="hidden" />
+
+    <input id="hdnOfficialWinnersList" type="hidden" />
+
+    <div id="dvNotAllowed" class="center" style="display:none">
+        <img src="~/img/NotAllowed.bmp" />
+    </div>
+    <div id="dvTooEarly" class="center" style="display:none">
+        <img src="~/img/NotStarted.bmp" />
+    </div>
+    <div id="dvGameOver" class="center" style="display:none">
+        <img src="~/img/GameOverText.bmp" />
+    </div>
+    <div id="dvGameOverPlayer" class="center" style="display:none">
+        <img src="~/img/GameOverPlayer.bmp" />
+    </div>
+    <div id="dvGameOverOnePlayer" class="center" style="display:none">
+        <img src="~/img/GameOverOnePlayer.bmp" />
+    </div>
+    <div id="dvGameOverPlayerWon" class="center" style="display:none">
+        <img src="~/img/GameOverPlayerWon.bmp" />
+    </div>
+    <div id="div1" style="display:none">
+        <div id="popdivplayer" style="display:none">
+            <div id="dvSpinMsgplayer" class="spinner-border text-warning dvSpinMsgplayer" role="status" style="display:none;">
+                <span class="sr-only"></span>
+            </div>
+            <h4 id="hCustomMessageplayer" style="display:none;" class="hCustomMsgplayerPopup">
+            </h4>
+            <button id="btnDialogOKplayer" class="btnDialogOKplayer" style="display:none">OK</button>
+            <button id="btnDialogCancelplayer" class="btnDialogCancelplayer" style="display:none">Cancel</button>
+        </div>
+        <div id="dvPlayersReadyPlayer" class="center4 dvDialog_Default">
+            <h3 id="h1welcomeplayers">Welcome to </h3> <h3 id="h3gamename" class="hgamename"></h3>
+            <br>
+            <div>
+                <h5 id="hNumberPlayers" class="center2_Default">
+                    Number of players: <span id="spPlayerCountPL"></span>
+                </h5>
+            </div>
+            <div id="div3Player" class="dv3Player_Default">
+                <h6 id="htmrNextQuestion" class="timerplyrNextQ_Default">
+                    Next question in <span>240</span> seconds...
+                </h6>
+                <h3 id="hCurQuestion"> Current question</h3>
+                <br>
+                <h4 id="h3QuestionTextPlayer" class="hPlyQuestion_Default"></h4>
+            </div>
+            <br>
+            <br>
+            <div id="dvNextQContainer">
+                <h4 id="hWaitingNQ" class="hWaitNextQ_Default">Waiting for the next question...</h4>
+                <div class="spinner-grow text-primary" role="status">
+                    <span class="sr-only"></span>
+                </div>
+                <div class="spinner-grow text-secondary" role="status">
+                    <span class="sr-only"></span>
+                </div>
+                <div class="spinner-grow text-success" role="status">
+                    <span class="sr-only"></span>
+                </div>
+                <label></label>
+            </div>
+        </div>
+        @*Bingo Card!------------------*@
+        <div id="dvYourCard" class="dvMyCenter dvDialog_Default" style="display:none">
+            Your Card
+        </div>
+        <div id="dvBingoCard" class="container dvCardContainer_Default" style="display:none">
+            <div class="row dvRow">
+                <div id="dvCell1" class="col-sm dvCell_Default" style="cursor:pointer;"></div><div id="dvCell2" class="col-sm dvCell_Default" style="cursor:pointer;"></div><div id="dvCell3" class="col-sm dvCell_Default" style="cursor:pointer;"></div>
+            </div>
+            <div class="row dvRow">
+                <div id="dvCell4" class="col-sm dvCell_Default" style="cursor:pointer;"></div><div id="dvCell5" class="col-sm dvCell_Default" style="cursor:pointer;"></div><div id="dvCell6" class="col-sm dvCell_Default" style="cursor:pointer;"></div>
+            </div>
+        </div>
+        @*Bingo Card!------------------*@
+        <table id="tbBingoControls" class="tbBingoControls">
+            <tr id="trResultsCheck" style="display:none">
+                <td><h4 id="hCheckResults" class="chkWaitResults_Default">Checking Results. Please wait...</h4></td>
+                <td>
+                    <div>
+                        <div class="spinner-grow text-primary" role="status">
+                            <span class="sr-only"></span>
+                        </div>
+                        <div class="spinner-grow text-secondary" role="status">
+                            <span class="sr-only"></span>
+                        </div>
+                        <div class="spinner-grow text-success" role="status">
+                            <span class="sr-only"></span>
+                        </div>
+                        <label></label>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    @*Wheel of Fortune!!---------------*@
+    <div id="div2" class="dvDialog" style="display: none;">
+        <h3>
+            New question in <span>5</span> seconds...
+        </h3>
+        <img src="~/img/wheeloffortune.gif" alt="animated" />
+    </div>
+    @*END Wheel of Fortune!!---------------*@
+
+    @*END PLAYER PANEL---------------------------------------------------*@
+
+
+
+    @*BEGIN ADMIN CONTROL PANEL--------------------------------------------*@
+    @*BEGIN ADMIN CONTROL PANEL--------------------------------------------*@
+
+    <div id="modGameOverSummary" class="modGameOverSummary">
+        <h5>
+            This game is over. Please don't forget to contact the winners. Thanks.
+        </h5>
+        <div>
+            <h3 class="titleNexWinners">Winners</h3>
+        </div>
+        <table class="sampleTable">
+            <tbody id="tbGameOverSummary" class="scroll">
+            </tbody>
+        </table>
+    </div>
+    <div id="mdQuestionsasked" class="dvDialog" style="display: none;">
+        <h4 id="titQasked">Questions asked</h4>
+        <a href="#" id="QaskedClose" class="QaskedClose">
+            X
+        </a>
+        <br>
+        <table id="tbQuestionsasked" class="sampleTable">
+            <thead>
+                <tr class="trhead" style="color:deeppink">
+                    <th class="centerAlign12">
+                        ID
+                    </th>
+                    <th class="centerAlign12">
+                        Question
+                    </th>
+                    <th class="centerAlign12">
+                        Status
+                    </th>
+                    <th class="centerAlign12">
+                        Answer
+                    </th>
+                    <th class="centerAlign12">
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tbdyQuestionsasked" class="scroll">
+            </tbody>
+        </table>
+    </div>
+    <div id="modNexWinnersFromAdminContainer" class="modNexWinnersFromAdminContainer modBackColorNWinner_Default">
+        <h5 id="htmrTitleWinners">
+            This panel disappears in <span>10</span> seconds...
+        </h5>
+        <div id="modMydiv" class="mydiv">
+            <h3 class="titleNexWinners">Congratulations!</h3>
+        </div>
+        <h6 id="h3PlayerWonMessage" class="h3PlayerWonMessage" style="display:none;">
+            Thank you for participating. You'll be contacted in order to deliver your prize.
+        </h6>
+        <table class="sampleTable">
+            <tbody id="tbWinnerOfficial" class="scroll">
+            </tbody>
+        </table>
+        <table id="tbWinnerFromAdmin" class="tbWinnerFromAdmin">
+            <tr>
+                <td><button id="btnContinuePlayer" class="button_Default button4">Continue?</button></td>
+                <td><button id="btnPlayerWonBingo" class="button_Default button4" style="display:none">Close</button></td>
+                <td><button id="btnLeavePlayer" class="button_Default button4">Leave</button></td>
+            </tr>
+        </table>
+    </div>
+    <div id="modGameTheme" class="modGameTheme" style="display:none;">
+        <a href="#" id="GThemeClose" class="GThemeClose">
+            X
+        </a>
+        <h4 class="hWinnerReg">Set Theme</h4>
+        <br>
+        <table id="tblBingoThemes">
+            <tr>
+                <td id="tdThDef">Default</td>
+            </tr>
+            <tr>
+                <td id="tdThWomen">Women's day</td>
+            </tr>
+            <tr>
+                <td id="tdThCorp">Corporate</td>
+            </tr>
+            <tr>
+                <td id="tdThPride">Pride</td>
+            </tr>
+            <tr>
+                <td id="tdThHalloween">Halloween</td>
+            </tr>
+            <tr>
+                <td id="tdThXmas">Christmas</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="modPlayerGameKey" class="modPlayerGameKey">
+        <h6 class="hnewgamekey">Please, wait for the Game Key to be informed by the Administrator</h6>
+        <br>
+        <input id="txtPlayerGameKey" placeholder="Enter the Game Key." class="txtEmailWinner" type="text" />
+        <br>
+        <button id="btnPlayerStart" class="btnPlayerStart button4 ">Continue</button>
+        <br>
+    </div>
+    <div id="modRegisterWinners" class="modRegisterWinners">
+        <h4 class="hWinnerReg2">Registration</h4>
+        <input id="txtRegWinFullName" placeholder="Enter Full Name" class="txtEmailWinner" type="text" />
+        <br>
+        <input id="txtRegWinEmail" placeholder="Enter EY email" class="txtEmailWinner" type="text" />
+        <br>
+        <input id="txtRegWinGPN" placeholder="Enter EY GPN Code" class="txtEmailWinner" type="text" />
+        <br>
+        <button id="btnRegisterWinner1" class="btnRegisterWinner1 button4 ">Register</button>
+        <br>
+    </div>
+    <div id="modNewGameSession" class="modNewGameSession">
+        <h4 class="hNewGameSession">New Bingo</h4>
+        <input id="txtNewGameName" placeholder="Enter Game Name" class="txtEmailWinner" type="text" />
+        <br>
+        <input id="txtNewGameDescription" placeholder="Enter Game Description" class="txtEmailWinner" type="text" />
+        <br>
+        <div id="dvBingoType" class="dvBingoType">
+            <h6 class="hBingoType">Select Bingo Type</h6>
+            <br>
+            <label id="lbltrivia" class="lbltrivia">Trivia</label><input id="rbTypeTrivia" type="radio" class="rbtrivia" />
+            <label id="lblclassic" class="lblclassic">Classic</label><input id="rbTypeClassic" type="radio" class="rbclassic" />
+        </div>
+        <textarea id="txtObservations" placeholder="Enter Observations for this new game." class="txtNewGameDesc"></textarea>
+        <br>
+        <button id="btnCreateGameSession" class="btnRegisterWinner1 button4 ">Continue</button>
+        <br>
+    </div>
+    <div id="modCardDetails" class="modCardDetails">
+        <a href="#" id="CDetClose" class="CardDetailsClose">
+            X
+        </a>
+        <h4>Player hits</h4>
+        <div class="tbheaderPlayerHits">
+            <div class="tbhrowPlayerHits">
+                <div class="tbhcolPlayerHits" align="center">Question</div>
+                <div class="tbhcolPlayerHits">Correct answer</div>
+                <div class="tbhcolPlayerHits">Player's answer</div>
+            </div>
+        </div>
+        <table class="scroll">
+            <tbody id="tbPlayerHits">
+            </tbody>
+        </table>
+        <br>
+        <table id="tbWinnerControls" class="tbWinnerControls" cellpadding="10" cellspacing="0">
+            <tr>
+                <td><button class="button button4" id="btnNotWinner">Deny</button></td>
+                <td><button class="button button4" id="btnConfirmWinner">Confirm</button></td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    <div id="modPlayerCard" class="dvDialog" style="display:none">
+        <a href="#" id="CloseModPlayerCard" class="CloseModPlayerCard">
+            X
+        </a>
+        <div id="dvWinnerBingoCard" class="container dvWinnerBingoCard">
+            <div id="dvWinnerHeader" class="dvMyCenter dvDialog" style="color:#1C205A;border-color:#556D8C;">
+                Player <span id="spPlayerName"></span><span id="spPlayerPrize"></span>
+            </div>
+            <div class="row dvRow">
+                <div id="dvCell10" class="col-sm" style="font-weight:bold;"></div><div id="dvCell11" class="col-sm"></div><div id="dvCell12" class="col-sm"></div><div id="dvCell13" class="col-sm"></div>
+            </div>
+            <div class="row dvRow">
+                <div id="dvCell17" class="col-sm" style="font-weight:bold;"></div><div id="dvCell14" class="col-sm"></div><div id="dvCell15" class="col-sm"></div><div id="dvCell16" class="col-sm"></div>
+            </div>
+        </div>
+        <br>
+        <button class="button button4" id="lnkShowDetails">Show Correct Answers</button>
+        <br>
+    </div>
+    <br>
+    <div id="dvAdmin" style="display:none">
+        <div id="popdiv" style="display:none">
+            <div id="dvSpinMsg" class="spinner-border text-warning dvSpinMsg" role="status" style="display:none;">
+                <span class="sr-only"></span>
+            </div>
+            <h4 id="hCustomMessage" style="display:none;" class="hCustomMsgPopup">
+            </h4>
+            <button id="btnDialogOK" class="btnDialogOK" style="display:none">OK</button>
+            <button id="btnDialogCancel" class="btnDialogCancel" style="display:none">Cancel</button>
+        </div>
+        <br>
+        <div id="dvPlayersReady" class="center4 dvDialog">
+            <h3 id="h1welcomeplayers">EYBingo Administration</h3>
+            <br>
+            <div id="dvPlayersMonitor" style="border-style:solid;border-width:1px;">
+                <h5 id="mostrecentPlayer1" class="center2" style="color:green;"></h5>
+                <h5 id="mostrecentPlayer2" class="center2" style="color:red;"></h5>
+                <h5 id="mostrecentPlayer3" class="center2" style="color:black;"></h5>
+            </div>
+            <div id="dvPlayersCount" style="color:green;font-weight:bold">
+                <h4>
+                    Number of players: <span id="spPlayerCountADM"></span>
+                </h4>
+            </div>
+            <div id="div3" style="display: none;border-style:solid;border-width:1px;">
+                <h3> Current question</h3>
+                <br>
+                <h4 id="h3QuestionText" style="color:blue;font-weight:bold"></h4>
+            </div>
+            <br>
+            <div id="dvWinnerContainer" style="display: none;">
+                <h4 style="color:red;font-weight:bold">Waiting for winners...!!<span>60</span></h4>
+                <div class="spinner-border text-danger" role="status">
+                    <span class="sr-only"></span>
+                </div>
+                <div class="spinner-border text-warning" role="status">
+                    <span class="sr-only"></span>
+                </div>
+                <div class="spinner-border text-info" role="status">
+                    <span class="sr-only"></span>
+                </div>
+            </div>
+            <div id="dvWinnersGrid" style="display: none;">
+                <h2>Potential winners</h2>
+                <table class="sampleTable">
+                    <thead>
+                        <tr class="trhead">
+                            <th class="centerAlign12">
+                                PlayerID
+                            </th>
+                            <th class="centerAlign12">
+                                Player
+                            </th>
+                            <th class="centerAlign12">
+                                Prize Type
+                            </th>
+                            <th class="centerAlign12">
+                                Actions
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbWinnersGrid" class="scroll">
+                    </tbody>
+                </table>
+            </div>
+            <table id="tbNotifyPlayers" class="tbWinnerControls" style="display:none;text-align:center;" cellpadding="10" cellspacing="0">
+                <tr>
+                    <td><button class="btnNotify button4" id="btnNotify">Notify Players</button></td>
+                    <td><button class="btnContinuePlay button4" id="btnContinuePlay" style="display:none;">Continue playing?</button></td>
+                </tr>
+            </table>
+            @*<a href="#" id="btnGameSwitch">
+                    <img id="imgGameOn" src="~/img/GameSwitch2.bmp" style="display:none" />
+                    <img id="imgGameOff" src="~/img/GameSwitch3.bmp" />
+                </a>*@
+            <div id="dvGameModeControls" class="dvGameModeControls">
+                <h4>Game Mode</h4>
+                <div class="switch-toggle switch-3 switch-candy dv3state">
+                    <input id="on" name="state-d" type="radio" checked="" />
+                    <label for="on" onclick="">Line</label>
+
+                    <input id="na" name="state-d" type="radio" disabled checked="checked" />
+                    <label for="na" class="disabled" onclick="">&nbsp;</label>
+
+                    <input id="off" name="state-d" type="radio" />
+                    <label for="off" onclick="">Bingo</label>
+                    <a></a>
+                </div>
+                <br>
+                @*<button id="btnOneMoreRound" class="btnOneMoreRound button4">Play now!</button>*@
+            </div>
+            <button id="btnNextQuestion" class="btnNextQuestion button4" style="display:none">Next Question</button>
+        </div>
+        <br>
+
+    </div>
+
+    @*BEGIN ADMIN MODALS MENU----------------------------------*@
+    <div id="modQuestions" class="dvDialog" style="display: none;">
+        <h4 id="titAllQ" style="display:none;">Questions</h4>
+        <a href="#" id="QClose" class="QClose">
+            X
+        </a>
+        <table id="tbLQControls" class="aligntblq" cellpadding="0" cellspacing="0">
+            <tr>
+                <th id="btnQuestionsAsked" style="cursor:pointer;">
+                    Questions Asked
+                </th>
+                <th id="btnNewQuestion" style="cursor:pointer;">
+                    [+] New question
+                </th>
+                <th id="mnQActivateAll" style="cursor: pointer;color: chartreuse;">
+                    Activate all
+                </th>
+                <th id="mnQDeactivateAll" style="cursor: pointer;color: red;">
+                    Deactivate all
+                </th>
+                <th id="mnQQSearch">
+                    <input id="txtSearchQ" type="text" placeholder="Search Question"> <a id="btnSearchQ" href="#">Search</a>
+                </th>
+            </tr>
+        </table>
+        <br>
+        <table id="tbQuestionsAdmin" class="sampleTable">
+            <thead>
+                <tr class="trhead" style="color:deeppink">
+                    <th class="centerAlign12">
+                        ID
+                    </th>
+                    <th class="centerAlign12">
+                        Question
+                    </th>
+                    <th class="centerAlign12">
+                        Status
+                    </th>
+                    <th class="centerAlign12">
+                        Answer
+                    </th>
+                    <th class="centerAlign12">
+                        Edition
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tbdyQuestionsAdmin" class="scroll">
+            </tbody>
+        </table>
+        <h4 id="titNewQ" style="display:none;">New question</h4>
+        <h4 id="titEditQ" style="display:none;">Edit question</h4>
+        <table id="tbAddEditQuestion" style="display: none;">
+            <tr>
+                <td style="font-weight:bold;">
+                    Question:
+                </td>
+                <td>
+                    <input id="inRWQuestion" type="text" placeholder="New question">
+                </td>
+            </tr>
+            @*<tr>
+                    <td style="font-weight:bold;">
+                        Status:
+                    </td>
+                    <td>
+                        <input id="inEditStatus" type="text" placeholder="New Status">
+                    </td>
+                </tr>*@
+            <tr>
+                <td style="font-weight:bold;">
+                    Answer:
+                </td>
+                <td>
+                    <input id="inRWAnswer" type="text" placeholder="New Answer">
+                </td>
+            </tr>
+        </table>
+        <div>
+            <button class="btnSaveQuestion button4" id="btnSaveQuestion" style="display:none">Save</button>
+        </div>
+        <br>
+        <a href="#" id="btnList" style="display: none;font-weight:bold;">
+            Back to list
+        </a>
+        <div>
+            <button id="btnCreateAdminConsole" class="btnCreateAdminConsole button4 " style="display: none;">Create New Game</button>
+        </div>
+        <br>
+    </div>
+    <div id="modWinnersRegistered" class="dvDialog" style="display: none;">
+        <a href="#" id="WClose" class="WClose">
+            X
+        </a>
+        <h2>Registered Winners</h2>
+        <table class="tbWinnersRegistered">
+            <thead>
+                <tr class="trhead">
+                    <th class="centerAlign12">
+                        WinnerId
+                    </th>
+                    <th class="centerAlign12">
+                        Nick Name
+                    </th>
+                    <th class="centerAlign12">
+                        Full Name
+                    </th>
+                    <th class="centerAlign12">
+                        Email
+                    </th>
+                    <th class="centerAlign12">
+                        Prize Type
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tbdRegWinnersGrid" class="scroll">
+            </tbody>
+        </table>
+    </div>
+    <div id="modPlayers" class="dvDialog" style="display: none;">
+        <a href="#" id="PClose" class="WClose">
+            X
+        </a>
+        <table id="tblPlayersAdmin" class="sampleTable">
+            <thead>
+                <tr>
+                    <th>
+                        Player ID
+                    </th>
+                    <th>
+                        Nickname
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Full Name
+                    </th>
+                    <th>
+                        GPN Code
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tbdyPlayersAdmin" class="scroll">
+            </tbody>
+        </table>
+    </div>
+    <div id="modCards" class="dvDialog" style="display: none;">
+        <a href="#" id="mdCardClose" class="WClose">
+            X
+        </a>
+        <table id="tblCardsAdmin" class="sampleTable">
+            <thead>
+                <tr>
+                    <th>
+                        Player Nick
+                    </th>
+                    <th>
+                        Answer
+                    </th>
+                    <th>
+                        Hit
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tbdyCardsAdmin" class="scroll">
+            </tbody>
+        </table>
+    </div>
+
+    @*END ADMIN MODALS MENU----------------------------------------*@
+
+
+    <div id="div4" class="dvDialog" style="display: none;">
+        <h5>
+            There are no more questions. Thank you for participating!
+        </h5>
+        @*TO DO: REENABLE THIS SECTION WHEN MULTISESSION IS FINISHED.*@
+        @*<div>
+                <h3 class="titleNexWinners">Winners</h3>
+            </div>
+            <table class="sampleTable">
+                <tbody id="tbNoMoreQuestions" class="scroll">
+                </tbody>
+            </table>*@
+    </div>
+
+
+    @*END ADMIN CONTROL PANEL--------------------------------------------*@
+    @*END ADMIN CONTROL PANEL--------------------------------------------*@
+
+
+
+    @*BEGIN INITIAL GENERAL REGISTRATION---------------------------------*@
+
+    @*<div id="dvInitialLoading" class="dvInitialLoading">
+            <img src="~/img/loading.gif" />
+        </div>*@
+
+
+    <div id="dvGeneralRegistration" class="fullscreen-container">
+        <div id="splashWelcome" class="popdivWarning">
+            <div id="dvEYLOGO" class="dvEYLOGO">
+                <img src="~/img/SPLASHFINAL.png" />
+            </div>
+            <div id="dvTerms" style="display:none">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="tdTermsTitle">
+                                <h6>EY Gaming Club - Terms and Conditions</h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea readonly class="txtTerms">Welcome to the EY Gaming Club. The EYBingo game is a part of the EY Gaming Club platform. By making use of any of the games in this platform you acknowledge you are an EY active employee. You acknowledge the use of this game for sole purpose of entertainment. You acknowledge your compliance with the Global Code of Conduct and the EY Privacy Policies. You are not authorized to divulge, download or distribute any of the contents of this game. You acknowledge your consent to EY to make you use of your corporate information for campaigns, promotions in the corporate environment and/or public announcements and/or public marketing campaigns. EY does not promote gambling in any form. EY is not responsible for any improper use of this game and its consequences, including but not limited to gaming addiction. The EYBingo and the EY Gaming Club platform are property of EY GLOBAL LTD. All rights reserved (C) 2020.</textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h6 id="h6CustomMsg" class="h6CustomMsg">
+                By making use of this game you automatically accept the terms and conditions.
+            </h6>
+            <button id="btnAcceptTerms" class="btnAcceptTerms">Accept</button>
+            <button id="btnReadTerms" class="btnReadTerms">Terms and Conditions</button>
+            <button id="btnRefuseTerms" class="btnRefuseTerms" style="display:none">Exit</button>
+        </div>
+        <br />
+        <br />
+        <h3 id="hPlayerRegTitle" style="display:none;">
+            Player registration.
+        </h3>
+        <label id="lblCustomNick" style="color:#3C5A84;display:none;">Your Nickname is</label>
+        <input id="txtCustomNick" type="text" placeholder="Enter Nickname" style="display:none;">
+        <label id="lblSetAutoPlayer" style="color:#3C5A84;display:none;">Set automatic Nickname</label>
+        <input id="chkAutomaticNick" type="checkbox" style="border-color:#337AB7;cursor:pointer;display:none;">
+        <br />
+        <br />
+        <input id="btnRegisterPlayer" type="button" value="OK" style="margin-left:auto;border-color:darkslategrey;border-style:solid;width:80px;display:none;">
+        <br />
+        <br />
+    </div>
+    @*END INITIAL GENERAL REGISTRATION---------------------------------*@
+
+    <!-- BEGIN Javascript -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="~/js/confetti.js"></script>
+    <script src="~/js/confetti.min.js"></script>
+    <script src="~/js/TTTBingo.js"></script>
+    <!-- END Javascript -->
+
+</body>
+</html>
+
+
+

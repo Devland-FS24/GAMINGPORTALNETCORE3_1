@@ -1,0 +1,118 @@
+EY GAMING PORTAL *************************
+-------------------------------------------------------------------------------
+--- THIS IS A DEMO APPLICATION AND IT'S NOT PROTECTED BY COPYRIGHTS OF ANY KIND
+	IT IS FREE TO USE. ---------------------------
+-------------------------------------------------------------------------------
+
+Previous requirements:
+
+THE .NET CORE 3.1 FRAMEWORK MUST BE INSTALLED.
+BROWSER BY DEFAULT, GOOGLE CHROME.
+Visual Studio 2019 or above.
+SQL Server 2014 or higher.
+SQL Management Studio v17.8.1.
+
+
+--------------------------------------------------
+
+WHAT'S THIS APPLICATION ABOUT?
+
+This a demo of the EY Gaming Portal I created and worked on back in 2018/2019.
+The solution may or may not run. Since there were many many versions, I cannot guarantee this version will work. But in the code you can find a clue on how it would "looked and felt" back in the day. This was a muliplayer game with two basic types of participants:
+The ADMIN and the Player.
+
+--------------------------------------------------
+
+How to run this application locally?
+
+1- OPEN AND RESTORE THE DATABASE "EYGamingCub"..\\EYGAME\DB\EY2019.bak, ON THE SELECTED LOCAL SQL SERVER.
+
+2- OPEN THE SOLUTION IN THE FOLDER \\EYGAME\EYGamingClub\EYGamingClub.sln
+
+3- BUILD AND RUN THE SOLUTION.
+
+++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++
+
+TROUBLESHOOTING:
+
+    IN CASE YOU COME ACCROSS SOME ISSUES OR ERRORS, PLEASE HAVE IN MIND THE FOLLOWING CLUES:
+
+1- MAKE SURE YOU HAVE THE RIGHT CONNECTION STRING:
+  FOR THIS EXAMPLE CHECK IN THE FOLLOWING FILE:
+  \\EYGamingClub\appsettings.json
+
+  LOOK FOR THE:
+  "ConnectionStrings": {
+    "DevConnection": "Server=<YOUR SQL SERVER MACHINE NAME>\\<YOUR SQL SERVER NAME>;Database=EYGamingCub;Trusted_Connection=True;MultipleActiveResultSets=True"
+  }
+
+2- IF NOT, CHANGE IT TO YOUR LOCAL CONNECTION STRING DATA.
+
+3- REBUILD YOUR DBCONTEXT SET OF MODELS BY DOING THIS:
+
+    - WITHIN THE MODELS FOLDER DELETE THE FOLLOWING LIST OF CLASSES IN THIS ORDER:
+    Activities.cs
+    Admins.cs
+    Audits.cs
+    Cards.cs
+    Claims.cs
+    FailedAttempts.cs
+    GameEvent.cs
+    GameSessions.cs
+    Players.cs
+    Questions.cs
+    Winners.cs
+    EYGamingCubContext.cs
+
+    - SEARCH FOR AND COMMENT OUT THE REFERENCES TO EYGamingCubContext WITHIN EVERY CONTROLLER.
+
+    - ONCE YOU REBUILD SUCCESSFULLY YOUR SOLUTION, PROCEED TO REBUILD YOUR DBCONTEXT AS FOLLOWS.
+
+    - GO TO TOOLS, NUGET PACKAGE MANAGER--> PACKAGE MANAGER CONSOLE:
+    RUN THE FOLLOWING COMMAND:
+        Scaffold-DbContext "Server=.\<YOUR SQL SERVER NAME>;Database=EYGamingCub;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force
+    - IF YOU STILL HAVE ERRORS, YOU'LL HAVE TO UPDATE YOUR .NET CORE VERSION TO THE LATEST, UPDATE YOUR ENTITY FRAMEWORK CORE VERSION TO THE LATEST AND FIND THE NEW COMMANDS TO SCAFFOLD THE DBCONTEXT FROM YOUR EXISTING DATABASE, FOLLOWING THE DATABASE FIRST APPROACH.
+
+4- NOW YOU'RE ALL SET TO RUN IT AGAIN.
+
+4.1 SELECT BINGO
+
+5- YOU'LL NEED TO START YOUR FIRST GAMING SESSION AS 'ADMIN'    
+    TAKE NOTE OF THE "GAME KEY" YOU'VE JUST CREATED, IT'S IMPORTANT!
+
+6- NOW YOU CAN CREATE AS MANY PLAYERS AS YOU WANT, MAKE SURE THEY'RE MORE THAN 4.
+
+7- YOU MAY OR MAY NOT PERFECTLY RUN THIS VERSION OF THE EY GAMING PORTAL. THERE WERE MANY VERSIONS AND I'M NOT SURE THIS VERSION WAS WORKING NOR IF IT WAS THE LATEST VERSION.
+AFTER I LEFT THAT PROJECT, MANY MORE DEV TEAMS WORKED ON THE GAMING PORTAL AND IT CHANGED SIGNIFICANTLY.
+
+8- YOU'LL FIND SEVERAL UNUSED TABLES. THEY WERE MEANT FOR THE 
+   BACK OFFICE ADMINISTRATION WEB APPLICATION. BUT LATER ON IT WAS DECIDED TO CREATE A SEPARATE DATABASE FOR 
+   THAT APPLICATION. THE BOARD WANTED MORE FUNCTIONALITIES.
+
+--------------------------------------------------
+
+HIGHLIGHTS:
+
+    - This application was created using the ASP.NET MVC CORE 3.1 TEMPLATE.
+
+    - This application implements ASYNC-AWAIT PATTERN for their Controller classes in
+      the Data Access layer. Taking some advantage of this feature from EntityFramework Core. This makes it 	REST, but not RESTful.
+
+    - This application implements a manager class to separate business logic from the Data Layer.
+  
+    - There was a Unit Testing project for this application but it was developed after this version.
+
+    - Selenium Frontend Unit Testing was developed after this version.
+
+    - Repository and Unit of Work patterns were implemented after this version.
+
+    - This application makes heavy use of JQuery, AJAX, CSS3 and Bootstrap. 
+    
+    - Notice the several "timers" implemented in the \\wwwroot\js\TTTBingo.js. With this technique I resolved
+	 several concurrency issues regarding "players pressing buttons at the same time"...
+
+    - I successfully implemented the "on-the-fly change of Room Skins" while the players were playing. This
+	 version only had two Skins: Corporate and Default. For reasons I couldn't remember, this version
+	 won't properly work with that functionality but my time is limited to make it work again.
+

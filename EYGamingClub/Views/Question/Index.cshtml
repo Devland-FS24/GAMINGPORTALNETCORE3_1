@@ -1,0 +1,165 @@
+﻿@model IEnumerable<EYGamingClub.Models.Questions>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h4>Questions Register</h4>
+<hr />
+<button id="btnQuestionsAsked" onClick="filterquestionstatus();">Questions asked</button>
+<button id="btnBackFromFilter" onClick="BackFromFilter();">Back to list.</button>
+<table id="tblQuestions" class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="ActivateAllQuestionsServer" class="btn btn-outline-info">Activate all questions</a>
+            </th>
+            <th>
+                <a asp-action="AddOrEdit" class="btn btn-outline-success"><i class="far fa-plus-square"></i> Add new question</a>
+            </th>
+            <th>
+                <a asp-action="ClearAllQuestionsServer" class="btn btn-outline-danger">Deactivate all questions</a>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Question
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                Answer
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QuestionText)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QuestionStatus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Answer)
+                </td>
+                <td>
+                    <a asp-action="AddOrEdit" asp-route-id="@item.QuestionId"><i class="fa fa-marker fa-lg"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<table id="tblQuestionsByFilter" class="table table-hover" style="display:none">
+    <thead>
+        <tr>
+            <th>
+                Question
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                Answer
+            </th>
+        </tr>
+    </thead>
+    <tbody id="tbdQuestionByFilter">
+    </tbody>
+</table>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $('#btnQuestionsAsked').click(function () {
+
+        filterquestionstatus();
+    });
+
+
+    function BackFromFilter() {
+        var credentials = "";
+        $.ajax({
+                 type: "POST",
+                 ContentType: 'application/json',
+                 url: '@Url.Action("Index","Question")',
+                 data:JSON.stringify(credentials),
+                 success: function () {
+                      window.location.assign("/Question/");
+                 },
+                 error: function (XMLHttpRequest, textStatus, errorThrown) {
+                       alert(XMLHttpRequest.responseText);
+                 }
+             });
+    }
+
+
+
+
+    function filterquestionstatus() {
+
+        var currentquestionId = "";
+
+        $.ajax({
+            url: "/Question/FilterByQuestionStatus",
+            xhrFields: { withCredentials: true },
+            crossDomain: true,
+            data: {
+                questiontoken: currentquestionId
+            },
+            type: "GET",
+            dataType: "json",
+            success: function (result, status, xhr) {
+
+                var resultFromServer = xhr.getResponseHeader("JSonQuestionsAskedResult");
+
+
+
+                if (resultFromServer != "NoResults") {
+
+                    $('#tblQuestions').hide();
+                    $('#tblQuestionsByFilter').show();
+
+                    var arrpotentialwinners = resultFromServer.split("|");
+                    var arrpotentialwinner;
+                
+                    var newtr_html = '';
+
+                    for (var i = 0; i < arrpotentialwinners.length - 1; i++) {
+
+                        arrpotentialwinner = arrpotentialwinners[i].split(";");                   
+
+                        newtr_html += "<tr><td>" + arrpotentialwinner[0] + "</td>\
+                                       <td>" + arrpotentialwinner[1] + "</td>\
+                                       <td>" + arrpotentialwinner[2] + "</td></tr>";
+
+                        $('#tbdQuestionByFilter').html(newtr_html);
+
+                    }
+
+
+                }
+                else {
+                    $('#tblQuestions').hide();
+                    $('#tblQuestionsByFilter').show();
+
+                    newtr_html += "<tr><td></td>\
+                                       <td>" + "No results." + "</td>\
+                                       <td></td></tr>\
+                                   <tr><td></td><td></td><td></td></tr>";
+
+
+                    $('#tbdCardByFilter').html(newtr_html);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert('Unexpected error: ' + textStatus + " .Details: " + errorThrown);
+            }
+        });
+
+    }
+
+</script>

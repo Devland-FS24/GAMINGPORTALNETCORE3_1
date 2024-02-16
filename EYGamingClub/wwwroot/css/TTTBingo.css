@@ -1,0 +1,1648 @@
+﻿/*********************** BINGO _CorpORATE ***************************/
+
+.bd_Corp {
+    background-image: url(../img/EYCorp.png);
+    background-repeat: repeat;
+/*    padding-top: 65px;*/
+}
+
+.button_Corp {
+    background: linear-gradient(to right, black, yellow); /* Green */
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.dvDialog_Corp {
+    color: yellow;
+    background-color: black;
+    border-color: yellow;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+}
+
+.dvCardContainer_Corp {
+    background-color: black;
+    border-style: solid;
+    border-color: yellow;
+    border-width: 2px;
+}
+
+
+.dv_SelectedCell_Corp {
+    border-color: yellow;
+    border-style: solid;
+    border-width: 2px;
+    background-color: yellow;
+    color: black;
+    font-size: inherit;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+.dvCell_Corp {
+    border-color: yellow;
+    border-style: solid;
+    border-width: 2px;
+    font-size: inherit;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    color: yellow;
+}
+
+
+.alignright_Corp {
+    background-color: black;
+    color: yellow;
+    text-align: right;
+    margin: 0 auto;
+}
+
+.dv3Player_Corp {
+    color: yellow;
+    display: none;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+.hPlyQuestion_Corp {
+    font-weight: bold;
+}
+
+.timerplyrNextQ_Corp {
+    color: yellow;
+}
+
+
+.hWaitNextQ_Corp {
+    color: lightgray;
+    font-weight: bold;
+}
+
+
+.center2_Corp {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: white;
+}
+
+.btnGotBingo_Corp {
+    background: linear-gradient(to right, yellow, black); /* Green */
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px 0 0px;
+    cursor: pointer;
+}
+
+.spanBtnTimer_Corp {
+    color: yellow;
+    margin: 0px 0px 0px 450px;
+}
+
+.chkWaitResults_Corp {
+    color: darkgray;
+}
+
+.hCurQ_Corp {
+    color: white;
+    font-weight:bold;
+}
+
+.tmrCurQ_Corp {
+    color: white;
+    font-weight: bold;
+}
+
+.imgBingoHeader_Corp {
+    content: url(../img/EYBingoHeader1.png);
+    width: 1500px;
+    height: 175px;
+    margin: 0 auto;
+}
+
+.modBackColorNWinner_Corp {
+    background-color: lightgray;
+}
+
+.winnerprogress_Corp {
+    z-index: 1;
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    background: yellow;
+    left: 0px;
+    top: 0px;
+}
+
+
+.tdofficialwinner_Corp {
+    color: black;
+    font-weight: bold;
+}
+
+.tdscoring_Corp {
+    color: lightgray;
+    font-weight: bold
+}
+
+.dvProgressBar_Corp {
+    background: yellow;
+    padding: 1px;
+    overflow: hidden;
+    position: relative;
+}
+
+.htmrTitleWinners_Corp {
+    color: yellow;
+}
+/***********************END BINGO _CorpORATE ***************************/
+/***********************BEGIN BINGO _Default ***************************/
+.alignright_Default {
+    background-color: black;
+    color: white;
+    text-align: right;
+    margin: 0 auto;
+}
+
+
+.tmrCurQ_Default {
+    color: red;
+    /*font-weight: bold;*/
+}
+
+
+.bd_Default {
+    background-color: lightskyblue;
+ /*   padding-top: 65px;*/
+}
+
+.hgamename {
+    font-family:Tahoma;
+    font-weight:bold;
+}
+
+
+.imgBingoHeader_Default {
+    content: url(../img/BingoHeader.jpg);
+    width: 1500px;
+    height: 175px;
+    margin: 0 auto;
+}
+
+
+.h3PlayerWonMessage {
+    text-align: center;
+}
+
+/*.hCurQ_Default {
+    color: blue;
+    font-weight: bold;
+}*/
+
+
+.btnRegisterWinner1 {
+    background: linear-gradient(to right, red, purple); /* Green */
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px 0px 90px;
+    cursor: pointer;
+}
+
+
+.btnCreateAdminConsole {
+    background: linear-gradient(to right, red, purple); /* Green */
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px 0px 0px;
+    cursor: pointer;
+}
+
+
+.btnPlayerStart {
+    background: linear-gradient(to right, red, purple); /* Green */
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px 2px 0px 90px;
+    cursor: pointer;
+}
+
+.dvWinnerBingoCard {
+    font-weight: bold;
+    background-color: white;
+    border-style: solid;
+    border-color: orangered;
+    border-width: 2px;
+}
+
+.switch-toggle {
+    float: left;
+    background: #242729;
+}
+
+.switch-toggle input {
+    position: absolute;
+    opacity: 0;
+}
+
+.switch-toggle input + label {
+    padding: 7px;
+    float: left;
+    color: #fff;
+    cursor: pointer;
+}
+
+.switch-toggle input:checked + label {
+    background: green;
+}
+
+.dv3state {
+    margin: 5px 20px 1px 150px;
+}
+
+.chkWaitResults_Default {
+    color: #212529;
+    font-weight:bold;
+}
+
+.dv3Player_Default {
+    display: none;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+.hPlyQuestion_Default {
+    color:blue;
+    font-weight:bold;
+}
+
+.timerplyrNextQ_Default {
+    color:red;
+}
+
+.btnNotify {
+    margin-left: 250px;
+    background: linear-gradient(to right, red, purple); /* Green */
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.titleNexWinners {
+    margin-left: 280px;
+}
+
+.titleIndividualWinner {
+    color: chocolate;
+    margin-left: 600px;
+}
+
+.btnOneMoreRound {
+    margin: 20px 100px 10px 100px;
+    background: linear-gradient(to right, red, purple); /* Green */
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mydiv {
+    border-radius: 5px;
+    color: ghostwhite;
+    font-weight: bold;
+    height: 40px;
+    animation: myanimation 0.2s infinite;
+}
+
+@keyframes myanimation {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    75% {
+        background-color: brown;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+.modBackColorNWinner_Default {
+    background-color: chartreuse;
+}
+
+#modNexWinnersFromAdminContainer {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    left: 25%;
+    margin: 100px 0 0 -100px;
+    padding: 10px;
+    position: fixed;
+    width: 810px;
+    height: 330px;
+    top: 25%;
+    z-index: 1080;
+   /* background-color: chartreuse;*/
+}
+
+#modGameOverSummary {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    left: 25%;
+    margin: 100px 0 0 -100px;
+    padding: 10px;
+    position: fixed;
+    width: 810px;
+    height: 330px;
+    top: 25%;
+    z-index: 1082;
+    background-color: chartreuse;
+}
+
+
+.tbBingoControls {
+    align-content: center;
+    width: 30%;
+    margin-left: 600px;
+}
+
+.tbWinnerFromAdmin {
+    align-content: center;
+    width: 100%;
+    margin-left: 0px;
+}
+
+
+
+.btnContinuePlay {
+    margin-right: 250px;
+    background: linear-gradient(to right, red, purple); /* Green */
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hWinnerReg2 {
+    margin-left: 65px;
+}
+
+.hWinnerReg {
+    margin-left: 35px;
+}
+
+.RegWinnerClose {
+    margin-left: 280px;
+    font-weight: bold;
+}
+
+.WClose {
+    margin-left: 850px;
+    font-weight: bold;
+}
+
+.WinnersFromAdminClose {
+    margin-left: 780px;
+    font-weight: bold;
+}
+
+
+.CloseModPlayerCard {
+    margin-left: 715px;
+    font-weight: bold;
+}
+
+.CardDetailsClose {
+    margin-left: 530px;
+}
+
+.txtEmailWinner {
+    margin-top: 10px;
+    margin-left: 32px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.txtFName {
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.btnSaveQuestion {
+    background: linear-gradient(to right, red, purple);
+    border: none;
+    color: white;
+    width:100px;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+}
+
+
+.button_Default {
+    background: linear-gradient(to right, red, purple); /* Green */
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.button {
+    background: linear-gradient(to right, red, purple); /* Green */
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    border-radius: 2px;
+}
+
+.button2 {
+    border-radius: 4px;
+}
+
+.button3 {
+    border-radius: 8px;
+}
+
+.button4 {
+    border-radius: 12px;
+}
+
+.button5 {
+    border-radius: 50%;
+}
+
+#tbQuestionsAdmin tr:hover {
+    background-color: yellow;
+}
+
+/*table.YourClass tr:hover td {
+    background-color: #FEFEFE;
+}*/
+#tblBingoThemes tr:hover {
+    background-color: yellow;
+}
+
+
+
+.btnGotBingo_Default {
+    background: linear-gradient(to right, red, purple); /*Green*/
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px 0 0px;
+    cursor: pointer;
+}
+
+
+.spanBtnTimer_Default {
+    color: white;
+    margin: 0px 0px 0px 450px;
+}
+
+
+.btnNewQuestion {
+    background: linear-gradient(to right, red, purple); /* Green */
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px 0 -300px;
+    cursor: pointer;
+}
+
+
+.btnQuestionsAsked {
+    background: linear-gradient(to right, red, purple); /* Green */
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 200px 0px 0px;
+    cursor: pointer;
+}
+
+
+.gamemodebuttons {
+    border-color: aqua;
+    border-width: 1px;
+}
+
+.modCardDetails {
+    background-color: aqua;
+    border-color: darkslategrey;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+}
+
+.dvDialog_Default {
+    background-color: white;
+    border-color: darkslategrey;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+}
+
+.dvDialog {
+    background-color: white;
+    border-color: darkslategrey;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+}
+
+.dvGameModeControls {
+    height: 120px;
+    width: 50%;
+    margin-left: 200px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-color: darkslategrey;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+}
+
+
+.dvDialog10 {
+    text-align: center;
+    color: #1C205A;
+    border-color: #556D8C;
+    font-weight: bold;
+}
+
+.modRegisterWinners {
+    background-color: white;
+    border-color: darkslategrey;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.modPlayerGameKey {
+    background-color: white;
+    border-color: darkslategrey;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.modGameTheme {
+    background-color: white;
+    border-color: darkslategrey;
+    border-style: solid;
+    border-width: 2px;
+}
+
+
+.redBorder {
+    border: 1px solid red;
+}
+
+
+.RegWinPlayer {
+    margin-left: 30px;
+}
+
+.RegWinPrize {
+    margin-left: 40px;
+}
+
+.alignright_Default {
+    background-color: black;
+    color: white;
+    text-align: right;
+    margin: 0 auto; 
+}
+
+.alignadmin {
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+}
+
+.aligntblq {
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    width:100%;
+}
+
+.spanNickname {
+    color: yellow;
+}
+
+
+
+
+.spanGameStatusOFF {
+    color: red;
+}
+
+.spanGameStatusON {
+    color: lawngreen;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 180px;
+}
+
+.center4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.center5 {
+    margin-right: 380px;
+    width: 50%;
+}
+
+.hWaitNextQ_Default {
+    color: greenyellow;
+    font-weight: bold;
+}
+
+
+.center2_Default {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: green;
+}
+
+.center3 {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    width: 50%;
+}
+
+.header {
+    width: 1500px;
+    height: 175px;
+    margin: 0 auto;
+}
+
+
+#modal-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: .50;
+    -webkit-opacity: .5;
+    -moz-opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 1000;
+}
+
+#div2 {
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    left: 50%;
+    margin: -120px 0 0 -160px;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    z-index: 1000;
+}
+
+.dvCell_Default {
+    border-color: orangered;
+    border-style: solid;
+    border-width: 2px;
+    font-size: inherit;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    cursor: pointer;
+    color: orangered;
+}
+
+.dv_SelectedCell_Default {
+    border-color: orangered;
+    border-style: solid;
+    border-width: 2px;
+    background-color: brown;
+    color: white;
+    font-size: inherit;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+.dvWinnerCorrectCell {
+    border-color: orangered;
+    border-style: solid;
+    border-width: 2px;
+    background-color: lime;
+    color: white;
+    font-size: inherit;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+.dvWinnerIncorrectCell {
+    border-color: orangered;
+    border-style: solid;
+    border-width: 2px;
+    background-color: red;
+    color: white;
+    font-size: inherit;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+
+.dvCardContainer_Default {
+    background-color: white;
+    border-style: solid;
+    border-color: orangered;
+    border-width: 2px;
+}
+
+.dvRow {
+    height: 80px;
+}
+
+
+.dvWinnersGrid {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    border: 3px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 2px;
+    border-spacing: 1px;
+}
+
+.dvMyCenter {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tbWinnerControls {
+    align-content: center;
+    width: 100%;
+}
+
+.tbWinnersRegistered {
+    width: 100%;
+    border: 2px;
+    background-color: white;
+    border-style: solid;
+    padding: 10px;
+    margin: auto;
+    display: block;
+}
+
+#modWinnersRegistered {
+    background-color: orange;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    left: 50%;
+    margin: -150px 0 0 -560px;
+    padding: 10px;
+    color: darkblue;
+    position: fixed;
+    top: 50%;
+    z-index: 1090;
+    width: 60%;
+}
+
+.QaskedClose {
+    margin-left: 500px;
+    font-weight: bold;
+}
+
+
+.QClose {
+    margin-left: 1000px;
+    font-weight: bold;
+}
+
+.QCloseAddEdit {
+    margin-left: 250px;
+    font-weight: bold;
+}
+
+
+#mdQuestionsasked {
+    background-color: mediumturquoise;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    left: 50%;
+    width:50%;
+    margin: 0px 0 0 -380px;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    z-index: 1095;
+}
+
+
+#modQuestions {
+    background-color: mediumturquoise;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    left: 40%;
+    margin: 0px 0 0 -380px;
+    padding: 10px;
+    position: fixed;
+    top: 30%;
+    z-index: 1000;
+}
+
+#modPlayers {
+    background-color: lightgreen;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    left: 50%;
+    margin: -120px 0 0 -160px;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    z-index: 1000;
+}
+
+#modCards {
+    background-color: bisque;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    left: 25%;
+    margin: -120px 0 0 -160px;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    z-index: 1000;
+}
+
+#modPlayerCard {
+    background-color: bisque;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    left: 25%;
+    margin: -120px 0 0 -160px;
+    padding: 10px;
+    width: 50%;
+    position: fixed;
+    height: 400px;
+    top: 25%;
+    z-index: 1000;
+}
+
+#modCardDetails {
+    /*background-color: bisque;*/
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    left: 25%;
+    padding: 10px;
+    margin: 120px 0 0 100px;
+    height: 360px;
+    position: fixed;
+    top: 25%;
+    /*z-index: 1000;*/
+    z-index: 1040;
+}
+
+.thSelected {
+    border-width: 1px;
+    border-style: solid;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.thNotSelected {
+    background-color:white;
+    cursor:pointer;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.GThemeClose {
+    margin-left: 160px;
+}
+
+#modGameTheme {
+    background-color: lightcyan;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    left: 25%;
+    margin: 100px 0 0 140px;
+    padding: 10px;
+    position: fixed;
+    width: 200px;
+    height: 260px;
+    top: 25%;
+    /* z-index: 1000; */
+    z-index: 1060;
+}
+
+
+.modNewGameSession {
+    background-color: white;
+    border-color: darkslategrey;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.hNewGameSession {
+    margin-left: 70px;
+}
+
+
+.txtNewGameDesc {
+    margin-top: 10px;
+    margin-left: 1px;
+    width: 99%;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.dvBingoType {
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 10px;
+}
+
+.hBingoType {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.lbltrivia {
+    margin-left: 20px;
+}
+
+.rbtrivia {
+    margin-left: 2px;
+}
+
+.lblclassic {
+    margin-left: 50px;
+}
+
+.rbclassic {
+    margin-left: 2px;
+}
+
+.dvBingoTypeError {
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 10px;
+    border-color:red;
+}
+
+.lblclassicError {
+    margin-left: 50px;
+    color:red;
+}
+
+.lbltriviaError {
+    margin-left: 20px;
+    color:red;
+}
+
+#modNewGameSession {
+    background-color: lightcyan;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    left: 25%;
+    margin: 100px 0 0 140px;
+    padding: 10px;
+    position: fixed;
+    width: 290px;
+    height: 360px;
+    top: 25%;
+    z-index: 1060;
+}
+
+
+#modPlayerGameKey {
+    background-color: lightcyan;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    left: 25%;
+    margin: 100px 0 0 140px;
+    padding: 10px;
+    position: fixed;
+    width: 290px;
+    height: 200px;
+    top: 25%;
+    /* z-index: 1000; */
+    z-index: 1060;
+}
+
+
+#modRegisterWinners {
+    background-color: lightcyan;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    left: 25%;
+    margin: 100px 0 0 140px;
+    padding: 10px;
+    position: fixed;
+    width: 290px;
+    height: 230px;
+    top: 25%;
+    /* z-index: 1000; */
+    z-index: 1060;
+}
+
+
+#modal-background.active, #div2.active {
+    display: block;
+}
+
+
+#modal-background.active, #mdQuestionsasked.active {
+    display: block;
+}
+
+
+#modal-background.active, #modQuestions.active {
+    display: block;
+}
+
+#modal-background.active, #modPlayers.active {
+    display: block;
+}
+
+#modal-background.active, #modCards.active {
+    display: block;
+}
+
+#modal-background.active, #modPlayerCard.active {
+    display: block;
+}
+
+#modal-background.active, #modCardDetails.active {
+    display: block;
+}
+
+#modal-background.active, #modNexWinnersFromAdminContainer.active {
+    display: block;
+}
+
+
+#modal-background.active, #modGameOverSummary.active {
+    display: block;
+}
+
+#modal-background.active, #modWinnersRegistered.active {
+    display: block;
+}
+
+
+#modal-background.active, #modNewGameSession.active {
+    display: block;
+}
+
+#modal-background.active, #modPlayerGameKey.active {
+    display: block;
+}
+
+#modal-background.active, #modGameTheme.active {
+    display: block;
+}
+
+table.sampleTable {
+    border: 2px;
+    background-color: white;
+    border-style: solid;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+td, th .centerAlign {
+    text-align: center;
+    width: 180px;
+}
+
+
+.centerAlign12 {
+    text-align: center;
+    width: 200px;
+}
+
+.tdRightAnswer {
+    color: white;
+    background-color: lawngreen;
+    font-weight: bold;
+}
+
+.tdWrongAnswer {
+    color: white;
+    background-color: red;
+    font-weight: bold;
+}
+
+.trcustom {
+    border-bottom: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.trhead {
+    border-bottom: black;
+    background-color: aqua;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.trhead2 {
+    border-bottom: black;
+    background-color: yellow;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.scroll {
+    height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+}
+
+.tbheaderPlayerHits {
+    display: table;
+    width: auto;
+    background-color: yellow;
+    border: 1px solid black;
+    border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+
+.tbhrowPlayerHits {
+    display: table-row;
+    width: auto;
+    clear: both;
+}
+
+.tbhcolPlayerHits {
+    float: left;
+    display: table-column;
+    width: 175px;
+    color: black;
+    font-weight: bold;
+    border-color: black;
+    border-style: solid;
+    background-color: yellow;
+}
+
+/* NUMBER ANIMATIONS */
+.tdscoring_Default {
+    color: black;
+    font-weight: bold
+}
+
+.count {
+    margin-left: 30px;
+}
+
+
+.dvProgressBar_Default {
+    background: white;
+    padding: 1px;
+    overflow: hidden;
+    position: relative;
+}
+
+.winnerProgressBar {
+    z-index: 9;
+    position: relative;
+}
+
+.winnerprogress_Default {
+    z-index: 1;
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    background: blue;
+    left: 0px;
+    top: 0px;
+}
+
+.tdofficialwinner_Default {
+    color: chocolate;
+    font-weight: bold;
+}
+
+/* ---------- ADMIN SECTION ----------- */
+
+.fullscreen-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(90, 90, 90, 0.87);
+  /*  background: rgb(90 90 90 / 87%);*/
+    z-index: 9999;
+}
+
+#popdiv {
+    height: 460px;
+    width: 420px;
+    background-color: white;
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    margin: 100px 0 0 140px;
+    padding: 10px;
+    position: fixed;   
+}
+
+.popdivConfirm {
+    border-color: red;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.popdivWarning {
+    border-color: yellow;
+    border-style: solid;
+    border-width: 3px;
+}
+
+
+.popdivInfo {
+    border-color: lightskyblue;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.dvSpinMsg {
+    margin-left: 45%;
+    margin-top: 30%
+}
+
+.dvSpinMsgConfirm {
+    margin-left: 45%;
+    margin-top: 20%
+}
+
+
+.hCustomMsgPopup {
+    margin-left: 25%;
+    margin-top: 20%;
+}
+
+.hCustomMsgConfirm {
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+
+.btnDialogOKInfo {
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+
+.btnDialogOK {
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.btnDialogCancel {
+    margin-left: 40%;
+    width: 20%;
+}
+
+
+/* ---------- PLAYER SECTION ----------- */
+
+
+.fullscreen-containerplayer {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(90, 90, 90, 0.87);
+    /*  background: rgb(90 90 90 / 87%);*/
+    z-index: 9999;
+}
+
+#popdivplayer {
+    height: 370px;
+    width: 420px;
+    background-color: white;
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    margin: 100px 0 0 140px;
+    padding: 10px;
+    position: fixed;
+}
+
+.popdivplayerConfirm {
+    border-color: red;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.popdivplayerWarning {
+    border-color: yellow;
+    border-style: solid;
+    border-width: 3px;
+}
+
+
+.popdivplayerInfo {
+    border-color: lightskyblue;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.dvSpinMsgplayer {
+    margin-left: 45%;
+    margin-top: 30%
+}
+
+.dvSpinMsgplayerConfirm {
+    margin-left: 45%;
+    margin-top: 20%
+}
+
+
+.hCustomMsgplayerPopup {
+    margin-left: 25%;
+    margin-top: 20%;
+}
+
+.hCustomMsgplayerConfirm {
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+
+.btnDialogOKplayerInfo {
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+
+.btnDialogOKplayer {
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.btnDialogCancelplayer {
+    margin-left: 40%;
+    width: 20%;
+}
+
+/* ---------- SPLASH SCREEN SECTION ----------- */
+
+#splashWelcome {
+    height: 370px;
+    width: 420px;
+    background-color: white;
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    margin: 100px 0 0 140px;
+    padding: 10px;
+    position: fixed;
+}
+
+.dvEYLOGO {
+    margin-left: 25%;
+}
+
+.h6CustomMsg {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.btnReadTerms {
+    margin-left: 10%;
+    width: 50%;
+}
+
+.btnAcceptTerms {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.btnRefuseTerms {
+    margin-left: 40%;
+    width: 20%;
+}
+
+.txtTerms {
+    color: white;
+    background-color: darkblue;
+    width: 390px;
+    height: 220px;
+}
+
+.tdTermsTitle {
+    color: white;
+    background-color: darkblue;
+    text-align:center;
+}
+
+.bd_Refuse {
+    background-color: black;
+    /*   padding-top: 65px;*/
+}
+
+.dvInitialLoading {
+    margin-left: 40%;
+}
+
+.btnNextQuestion {
+    margin-bottom: 20px;
+    background: linear-gradient(to right, red, purple); /* Green */
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}

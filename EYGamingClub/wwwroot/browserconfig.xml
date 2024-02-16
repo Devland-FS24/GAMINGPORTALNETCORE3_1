@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+  <msapplication>
+    <tile>
+      <square70x70logo src="/eyfavicon-70.png"/>
+      <square150x150logo src="/eyfavicon-150.png"/>
+      <square310x310logo src="/eyfavicon-310.png"/>
+      <TileColor>#FFFFFF</TileColor>
+    </tile>
+  </msapplication>
+</browserconfig>

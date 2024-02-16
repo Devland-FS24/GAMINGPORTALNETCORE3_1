@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+   
+    <link rel="shortcut icon" href="/eyfavicon.ico?v=1.0">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/eyfavicon.ico?v=1.0">
+    <link rel="icon" type="image/png" sizes="196x196" href="/eyfavicon-192.png?v=1.0">
+    <link rel="icon" type="image/png" sizes="160x160" href="/eyfavicon-160.png?v=1.0">
+    <link rel="icon" type="image/png" sizes="96x96" href="/eyfavicon-96.png?v=1.0">
+    <link rel="icon" type="image/png" sizes="64x64" href="/eyfavicon-64.png?v=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/eyfavicon-32.png?v=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/eyfavicon-16.png?v=1.0">
+    <link rel="apple-touch-icon" href="/eyfavicon-57.png?v=1.0">
+    <link rel="apple-touch-icon" sizes="114x114" href="/eyfavicon-114.png?v=1.0">
+    <link rel="apple-touch-icon" sizes="72x72" href="/eyfavicon-72.png?v=1.0">
+    <link rel="apple-touch-icon" sizes="144x144" href="/eyfavicon-144.png?v=1.0">
+    <link rel="apple-touch-icon" sizes="60x60" href="/eyfavicon-60.png?v=1.0">
+    <link rel="apple-touch-icon" sizes="120x120" href="/eyfavicon-120.png?v=1.0">
+    <link rel="apple-touch-icon" sizes="76x76" href="/eyfavicon-76.png?v=1.0">
+    <link rel="apple-touch-icon" sizes="152x152" href="/eyfavicon-152.png?v=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/eyfavicon-180.png?v=1.0">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/eyfavicon-144.png?v=1.0">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+</head>
+<body>
+    <header>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

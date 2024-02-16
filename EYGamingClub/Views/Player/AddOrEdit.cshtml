@@ -1,0 +1,86 @@
+﻿@model EYGamingClub.Models.Players
+
+@{
+    ViewData["Title"] = "Create";
+}
+<style>
+    .alignright {
+        background-color: black;
+        color: white;
+        text-align: right;
+        margin: 0 auto;
+    }
+</style>
+<h4>Player Form</h4>
+<hr />
+<table id="tbPlayerNickname" class="alignright" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <th><a id="btnReset">Reset Game&nbsp; </a></th>
+    </tr>
+</table>
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="AddOrEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PlayerId" />
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <a asp-action="Index" class="btn btn-secondary btn-block"><i class="fa fa-table"></i> Back to List</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $('#btnReset').click(function () {
+        ConfirmDialog();
+    });
+
+
+    function ConfirmDialog() {
+        if (confirm("DANGER: All tables will be cleared. Any active game will fail. All winners will be lost. This action cannot be undone. Proceed under your own risk. Are you sure ?")){
+            generalresetbingogame();
+        }
+        else{
+            return false;
+        }
+    }
+
+
+    function generalresetbingogame() {
+
+            var currentquestionId = "";
+
+        $.ajax({
+            url: "/Player/ResetBingoGame",
+            xhrFields: { withCredentials: true },
+            crossDomain: true,
+            data: {
+                nextqplayer: currentquestionId
+            },
+            type: "POST",
+            dataType: "json",
+            success: function (result, status, xhr) {
+
+                    var resultFromServer = xhr.getResponseHeader("ResetResults");
+
+                    //if (dvNextQContainer visible){}
+                    if (resultFromServer != "Error") {
+                        alert('ALL TABLES CLEARED');
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert('Unexpected error: ' + textStatus + " .Details: " + errorThrown);
+                }
+            });
+
+    }
+
+</script>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
